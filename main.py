@@ -9,7 +9,7 @@ import joblib
 
 
 # CONFIG
-DATA_DIR = r"F:\DATA\beard\salafi"
+DATA_DIR = "DATA" #The colllection of DATA1,2,3,4
 MODEL_PATH = "salafi_look_model.pkl"
 IMG_SIZE = 224
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -93,10 +93,4 @@ def predict_image(image_path):
 
 # EXAMPLE USAGE
 # Replace this with the image you upload
-predict_image(r"F:\DATA\Screenshot 2026-01-12 033742.png")
-predict_image(r"F:\DATA\Screenshot 2026-01-12 033854.png")
-
-predict_image(r"F:\DATA\Screenshot 2026-01-12 034307.png")
-predict_image(r"F:\DATA\omar ghanem.png")
-predict_image(r"F:\DATA\hani.png")
-predict_image(r"F:\DATA\omar.png")
+predict_image("IMAGE")
